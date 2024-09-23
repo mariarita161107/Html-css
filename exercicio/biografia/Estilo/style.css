@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf'); format('opentype')
+    font-weight: normal;
+
+}
+
+:root {
+
+    --cor0: #d4e988;
+    --cor1: #d87979;
+    --cor2: #fcb1f5;
+    --cor3: #68e6e6;
+    --cor4: #e28e20;
+    --cor5: #4bb87a;
+
+    --fonte-padrão: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'bebas neue', cursive;
+    --fonte-android: 'android', cursive;
+}
+body {
+    background-color: #d87979;
+    font-family: var(--fonte-padrão);
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+}
+header {
+    background-color: var(--cor2); /* background-image: linear-gradient(to bottom , var(--cor3), var(--cor4));*/
+    min-height: 150px;
+    text-align: center;
+    padding-top: 6%;
+}
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    margin-top: 10px;
+}
+header > p {
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 5px;
+    margin: auto;
+}
+nav {
+    background-color: var(--cor2);
+    padding: 10px;
+}
+nav > a {
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+   text-decoration: none;
+   font-weight: bold;
+}
+nav > a: hover {
+    background-color: var(--cor5);
+    color: var(--cor3);
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+main h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-padrão);
+}
+
+main h2 {
+    font-family: var(--fonte-padrão);
+}
+main img {
+    width: 50%;
+}
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+div.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 20%;
+    position: relative;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: white;
+}
